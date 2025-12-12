@@ -1,0 +1,32 @@
+model:
+  model_path: Qwen/Qwen2-VL-7B-Instruct
+
+data:
+  num_workers: 16
+  enable_multisource: true
+  multisource_datasets_type: internvl
+  dataloader_type: native
+  datasets_type: mapping
+  train_path: sharegpt4v_pretrain
+  chat_template: qwen2vl_intern
+  max_seq_len: 32768
+  train_size: 13_500_000_000
+
+train:
+  output_dir: qwen2vl_sft
+  data_parallel_mode: fsdp1
+  wandb_project: qwen2vl
+  wandb_name: qwen2vl_1
+  rmpad: false
+  rmpad_with_pos_ids: true
+  ulysses_parallel_size: 1
+  freeze_vit: false
+  lr: 2.0e-5
+  lr_min: 1.0e-5
+  lr_decay_style: constant
+  num_train_epochs: 1
+  micro_batch_size: 1
+  global_batch_size: 32
+  # max_steps: 2000
+  ckpt_manager: dcp
+  init_device: cuda

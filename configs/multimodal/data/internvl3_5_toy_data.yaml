@@ -1,0 +1,34 @@
+sources:
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~mm_longdoc~en~arxivqa_rendered_en_new_20241231_sft_tiny~1.0.0~0.0/jsonl
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~mm_video~en~htstep_eventcount-longvideo_annos-htstep_eventcount_2k_2k_tiny~2.0.0~0.0/jsonl
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~Bank_Card_QA~unknown~credit_card_v1_0_tiny~1.0.0~0.0/jsonl
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~Book_Summarization_QA~unknown~book_qa_v1_tiny~1.0.0~0.0/jsonl
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~Chart_CoTQA~en~synthChart_cot_qa_en_v1_0_jsonl_tiny~1.0.0~0.0/jsonl
+- /mnt/inspurfs/eb3d_t/share/datasets/InternVL3_5_Tiny/internvl_delivery/internvl3_5_veomni_qwen_format/P~Chart_CoTQA~unknown~synthChart_cot_qa_cn_v1_0_jsonl_tiny~1.0.0~0.0/jsonl
+
+names:
+- arxivqa_rendered_en_new_20241231_sft_tiny@internvl3_5
+- longvideo_annos-htstep_eventcount_2k_2k_tiny@internvl3_5
+- credit_card_v1_0_tiny@internvl3_5
+- book_qa_v1_tiny@internvl3_5
+- synthChart_cot_qa_en_v1_0_jsonl_tiny@internvl3_5
+- synthChart_cot_qa_cn_v1_0_jsonl_tiny@internvl3_5
+
+
+media_root:
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~mm_longdoc~en~arxivqa_rendered_en_new_20241231_sft_tiny~1.0.0~0.0/multimodal_elements/
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~mm_video~en~htstep_eventcount-longvideo_annos-htstep_eventcount_2k_2k_tiny~2.0.0~0.0/multimodal_elements/
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~Bank_Card_QA~unknown~credit_card_v1_0_tiny~1.0.0~0.0/multimodal_elements/
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~Book_Summarization_QA~unknown~book_qa_v1_tiny~1.0.0~0.0/multimodal_elements/
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~Chart_CoTQA~en~synthChart_cot_qa_en_v1_0_jsonl_tiny~1.0.0~0.0/multimodal_elements/
+- /mnt/inspurfs/eb3d_t/share/datasets/internvl3_5_tiny_media/P~Chart_CoTQA~unknown~synthChart_cot_qa_cn_v1_0_jsonl_tiny~1.0.0~0.0/multimodal_elements/
+
+schedule:
+- schedule_type: const
+  weights:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
